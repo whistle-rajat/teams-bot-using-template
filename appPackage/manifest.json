@@ -1,0 +1,45 @@
+{
+    "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.19/MicrosoftTeams.schema.json",
+    "manifestVersion": "1.19",
+    "version": "1.0.0",
+    "id": "4abe186b-d6be-420f-8f28-71a73ad99668",
+    "developer": {
+        "name": "Formalize ApS",
+        "websiteUrl": "https://www.formalize.com",
+        "privacyUrl": "https://formalize.com/en/privacy-policy",
+        "termsOfUseUrl": "https://formalize.com/en/terms-and-conditions"
+    },
+    "icons": {
+        "color": "color.png",
+        "outline": "outline.png"
+    },
+    "name": {
+        "short": "Formalize-Dev",
+        "full": "Formalize Dev Automation Bot"
+    },
+    "description": {
+        "short": "Automation bot for Formalize",
+        "full": "This is an automation bot for Formalize that allows users to configure the bot in the Formalize application and makes it possible to accept messages via the bot"
+    },
+    "accentColor": "#FFFFFF",
+    "bots": [
+        {
+            "botId": "4abe186b-d6be-420f-8f28-71a73ad99668",
+            "scopes": [
+                "personal",
+                "team",
+                "groupChat"
+            ],
+            "supportsFiles": false,
+            "isNotificationOnly": false
+        }
+    ],
+    "composeExtensions": [],
+    "configurableTabs": [],
+    "staticTabs": [],
+    "permissions": [
+        "identity",
+        "messageTeamMembers"
+    ],
+    "validDomains": []
+}
