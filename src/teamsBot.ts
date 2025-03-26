@@ -1,4 +1,4 @@
-import { TeamsActivityHandler } from "botbuilder";
+import { ActivityHandler, TeamsActivityHandler, TurnContext } from "botbuilder";
 
 // Teams activity handler.
 // You can add your customization code here to extend your bot logic if needed.
@@ -6,6 +6,12 @@ export class TeamsBot extends TeamsActivityHandler {
   constructor() {
     super();
 
+    this.onInstallationUpdate(async (ctx, next) => {
+      // const tI = teamsGetTenant(ctx.activity);
+      // post to grc-api
+      // postCompleteInstallation(tI.id);
+      await next();
+  })
     // Listen to MembersAdded event, view https://docs.microsoft.com/en-us/microsoftteams/platform/resources/bot-v3/bots-notifications for more events
     this.onMembersAdded(async (context, next) => {
       const membersAdded = context.activity.membersAdded;

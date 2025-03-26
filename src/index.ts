@@ -136,7 +136,7 @@ expressApp.post("/api/notification", async (req, res) => {
 // Bot Framework endpoint. If you customize this route, update the Bot registration
 // in `/templates/provision/bot.bicep`.
 const teamsBot = new TeamsBot();
-expressApp.post("/api/messages", async (req, res) => {
+expressApp.post("/api/public/microsoft-teams/message", async (req, res) => {
   await notificationApp.requestHandler(req, res, async (context) => {
     await teamsBot.run(context);
   });

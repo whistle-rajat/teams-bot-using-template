@@ -2,19 +2,19 @@
     "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.19/MicrosoftTeams.schema.json",
     "manifestVersion": "1.19",
     "version": "1.0.0",
-    "id": "4abe186b-d6be-420f-8f28-71a73ad99668",
+    "id": "71b8c241-72f5-4f4f-93d9-545c459d7987",
     "developer": {
         "name": "Formalize ApS",
-        "websiteUrl": "https://www.formalize.com",
-        "privacyUrl": "https://formalize.com/en/privacy-policy",
-        "termsOfUseUrl": "https://formalize.com/en/terms-and-conditions"
+        "websiteUrl": "https://devformalize.dev",
+        "privacyUrl": "https://devformalize.dev/en/privacy-policy",
+        "termsOfUseUrl": "https://devformalize.dev/en/terms-and-conditions"
     },
     "icons": {
         "color": "color.png",
         "outline": "outline.png"
     },
     "name": {
-        "short": "Formalize-Dev",
+        "short": "Formalize-Development",
         "full": "Formalize Dev Automation Bot"
     },
     "description": {
@@ -24,7 +24,7 @@
     "accentColor": "#FFFFFF",
     "bots": [
         {
-            "botId": "4abe186b-d6be-420f-8f28-71a73ad99668",
+            "botId": "bd256ca2-e25b-44cd-a533-b47352245935",
             "scopes": [
                 "personal",
                 "team",
